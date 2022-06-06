@@ -21,7 +21,7 @@ from pygments.lexers.web import PhpLexer
 # -- Project information -----------------------------------------------------
 
 project = 'WP fail2ban Blocklist'
-copyright = '2021, Charles Lecklider'
+copyright = '2021-2, Charles Lecklider'
 author = 'Charles Lecklider'
 
 
