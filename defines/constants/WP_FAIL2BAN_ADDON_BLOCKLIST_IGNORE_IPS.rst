@@ -24,7 +24,7 @@ A list of IP addresses to ignore if they appear in a Blocklist update.
 
 **Default:** :php:`[]` *(empty list)*
 
-Commonly used when accessing a site via shared access (e.g. Campus proxy, 3rd-party VPN, etc).
+Commonly used when accessing a site via shared access (e.g. Campus proxy, 3rd-party VPN, etc.).
 
 .. note::
    IPv6 addresses require `WP fail2ban` version 5 or later.
