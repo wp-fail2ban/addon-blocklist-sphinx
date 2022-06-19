@@ -13,8 +13,10 @@ Typical Settings
 
 If you are using the typical settings for *WPf2b* the Blocklist add-on will work without further configuration.
 
-Custom Jail
-"""""""""""
+.. _configuration__fail2ban__custom_jail:
+
+Creating a Custom Jail
+""""""""""""""""""""""
 
 #. Copy ``wpf2b-blocklist-hard.conf`` to your ``fail2ban/filters.d`` directory
 #. Create a new file in ``fail2ban/jail.d`` called ``wpf2b-blocklist.conf``

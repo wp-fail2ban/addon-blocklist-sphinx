@@ -12,10 +12,13 @@ WP_FAIL2BAN_ADDON_BLOCKLIST_CUSTOM_JAIL
 
 Changes the log format to match entries in ``wpf2b-blocklist-hard.conf`` instead of ``wordpress-hard.conf``.
 
-If you cannot set ``maxretry = 1`` in your ``wordpress-hard`` jail you must set this and create a custom ``fail2ban`` jail.
+If you cannot set ``maxretry = 1`` in your ``wordpress-hard`` jail you must set this and create a custom jail.
 
 .. code-block:: php
 
   define('WP_FAIL2BAN_ADDON_BLOCKLIST_CUSTOM_JAIL', true);
 
 **Default:** :php:`false`
+
+.. seealso::
+  :ref:`configuration__fail2ban__custom_jail`
