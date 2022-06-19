@@ -6,7 +6,9 @@
 
 .. toctree::
    :hidden:
-   :glob:
 
-   defines/*
-
+   defines/all
+   defines/logging
+   defines/misc
+   defines/remote-ips
+   defines/wp-fail2ban
