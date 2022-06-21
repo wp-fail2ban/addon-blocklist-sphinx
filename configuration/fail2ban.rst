@@ -34,4 +34,20 @@ Creating a Custom Jail
 
    Make sure you change ``logpath`` to the correct log for your OS. If your OS uses `systemd` it may be simpler and/or easier to install a real syslog service first.
 
-2. Reload or restart ``fail2ban``
+.. tip::
+
+  It is *strongly* recommended that you also use a different ``syslog`` facility with a custom jail.
+
+.. seealso::
+  :ref:`configuration__syslog__local_facility`
+
+3. Add the following to ``wp-config.php``
+
+.. code-block:: php
+
+  define('WP_FAIL2BAN_ADDON_BLOCKLIST_CUSTOM_JAIL', true);
+
+.. seealso::
+  :ref:`WP_FAIL2BAN_ADDON_BLOCKLIST_CUSTOM_JAIL`
+
+4. Reload or restart ``fail2ban``
