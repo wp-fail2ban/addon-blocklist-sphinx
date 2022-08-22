@@ -11,4 +11,4 @@ WP fail2ban Blocklist uses the standard WordPress Site Health tool to check that
 
 .. seealso::
 
-  :ref:`WP fail2ban: Site Health Tool <wp-fail2ban:configuration__site-health-tool>`
+  external:wp-fail2ban+ref:`WP fail2ban: Site Health Tool <configuration__site-health-tool>`
