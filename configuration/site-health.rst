@@ -10,5 +10,4 @@ Site Health Tool
 WP fail2ban Blocklist uses the standard WordPress Site Health tool to check that the Secret Key is available for communication with the BNS, and if possible, that ``fail2ban`` has been configured correctly.
 
 .. seealso::
-
-  external:wp-fail2ban+ref:`WP fail2ban: Site Health Tool <configuration__site-health-tool>`
+  :ref:`WP fail2ban - Site Health Tool <wp-fail2ban:configuration__site-health-tool>`
