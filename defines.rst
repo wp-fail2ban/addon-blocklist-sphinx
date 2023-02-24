@@ -12,3 +12,4 @@
    defines/misc
    defines/remote-ips
    defines/wp-fail2ban
+   defines/debug
