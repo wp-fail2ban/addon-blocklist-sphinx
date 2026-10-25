@@ -16,8 +16,7 @@ so the reference cannot acquire a separate hand-maintained expression.
 ``wpf2b-blocklist-hard.conf``
 -------------------------------
 
-.. literalinclude:: ../filters.d/wpf2b-blocklist-hard.conf
-   :language: ini
+.. include:: autogen/filters.d/wpf2b-blocklist-hard.inc
 
 Packaged soft filter
 --------------------
@@ -27,5 +26,4 @@ prefixed text ``Consider blocking connections``. Blocklist 3.0 has no active
 path that writes that message, so do not create an operational jail for this
 filter.
 
-.. literalinclude:: ../filters.d/wpf2b-blocklist-soft.conf
-   :language: ini
+.. include:: autogen/filters.d/wpf2b-blocklist-soft.inc

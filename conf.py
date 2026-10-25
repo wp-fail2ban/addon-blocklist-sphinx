@@ -7,6 +7,9 @@
 from sphinx.highlighting import lexers
 from pygments.lexers.web import PhpLexer
 
+import json
+import os
+
 # -- Path setup --------------------------------------------------------------
 
 # If extensions (or modules to document with autodoc) are in another directory,
@@ -23,8 +26,12 @@ from pygments.lexers.web import PhpLexer
 project = 'WP fail2ban Blocklist'
 copyright = '2020-2026, Charles Lecklider'
 author = 'Charles Lecklider'
-version = '3.0'
-release = '3.0.0'
+
+_pkg = json.load(open(os.path.join(os.path.dirname(__file__), 'version.json')))
+version = _pkg.get('version', '')
+release = _pkg.get('version', '')
+if _pkg.get('version_label'):
+    release = '%s (%s)' % (version, _pkg['version_label'])
 
 
 # -- General configuration ---------------------------------------------------
@@ -42,7 +49,7 @@ templates_path = ['_templates']
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.venv', 'venv']
 
 
 # -- Options for HTML output -------------------------------------------------
