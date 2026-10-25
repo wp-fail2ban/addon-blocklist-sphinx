@@ -21,8 +21,10 @@ from pygments.lexers.web import PhpLexer
 # -- Project information -----------------------------------------------------
 
 project = 'WP fail2ban Blocklist'
-copyright = '2021-2, Charles Lecklider'
+copyright = '2020-2026, Charles Lecklider'
 author = 'Charles Lecklider'
+version = '3.0'
+release = '3.0.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -53,7 +55,7 @@ html_theme = 'sphinx_rtd_theme'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = []
 
 # The master toctree document.
 master_doc = 'index'
@@ -61,7 +63,7 @@ master_doc = 'index'
 intersphinx_mapping = {
     'wp-fail2ban': (
         'https://docs.wp-fail2ban.com/en/latest/', (
-            '../../../../sphinx/docs/_build/html/objects.inv', None
+            '../../../../plugin/sphinx/_build/html/objects.inv', None
         )
     ),
 }

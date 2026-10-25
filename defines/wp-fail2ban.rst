@@ -1,8 +1,0 @@
-.. _wp-fail2ban:
-
-WP fail2ban
------------
-
-  * :ref:`WP_FAIL2BAN_SITE_HEALTH_SKIP_FILTERS <wp-fail2ban:WP_FAIL2BAN_SITE_HEALTH_SKIP_FILTERS>`
-
-  * :ref:`WP_FAIL2BAN_INSTALL_PATH <wp-fail2ban:WP_FAIL2BAN_INSTALL_PATH>`
