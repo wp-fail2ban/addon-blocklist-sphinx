@@ -26,5 +26,5 @@ later stages happened.
 This keeps the normal WP fail2ban boundary intact: WordPress provides the
 security context and messages, while the host administrator controls the
 privileged fail2ban and firewall configuration. The main WP fail2ban manual's
-:ref:`fail2ban configuration <wp-fail2ban:configuration__fail2ban>` explains
-that general message-to-ban path.
+:ref:`logging model <wp-fail2ban:operating_logging>` explains that general
+message-to-ban path.

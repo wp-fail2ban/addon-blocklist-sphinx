@@ -69,7 +69,7 @@ master_doc = 'index'
 
 intersphinx_mapping = {
     'wp-fail2ban': (
-        'https://docs.wp-fail2ban.com/en/latest/', (
+        'https://docs.wp-fail2ban.com/en/6.3/', (
             '../../../../plugin/sphinx/_build/html/objects.inv', None
         )
     ),

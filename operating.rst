@@ -44,8 +44,8 @@ Trace an accepted address through the host in order:
 Each checkpoint proves only its own stage. A syslog record does not prove a
 filter match, a filter match does not prove that the jail invoked an action,
 and a listed fail2ban ban does not replace checking the intended firewall
-state. The main manual's :ref:`fail2ban configuration
-<wp-fail2ban:configuration__fail2ban>` gives the general verification model.
+state. The main manual's :ref:`end-to-end procedure
+<wp-fail2ban:installation_verifying>` gives the general verification model.
 
 .. _operating_diagnose_connectivity:
 
