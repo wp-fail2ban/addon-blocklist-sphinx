@@ -23,5 +23,5 @@
    # https://wp-fail2ban.com/
    #
    # Author: Charles Lecklider
-   # Version: 
-   # Build Date: 2026-10-25T19:21:18+00:00
+   # Version: 3.0.0-rc1
+   # Build Date: 2026-11-05T14:49:31+00:00
