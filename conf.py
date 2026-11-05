@@ -28,8 +28,8 @@ copyright = '2020-2026, Charles Lecklider'
 author = 'Charles Lecklider'
 
 _pkg = json.load(open(os.path.join(os.path.dirname(__file__), 'version.json')))
-version = _pkg.get('version', '')
-release = _pkg.get('version', '')
+version = _pkg.get('version', '').split('-', 1)[0].split('+', 1)[0]
+release = version
 if _pkg.get('version_label'):
     release = '%s (%s)' % (version, _pkg['version_label'])
 
@@ -69,7 +69,7 @@ master_doc = 'index'
 
 intersphinx_mapping = {
     'wp-fail2ban': (
-        'https://docs.wp-fail2ban.com/en/6.3/', (
+        'https://docs.wp-fail2ban.com/en/stable/', (
             '../../../../plugin/sphinx/_build/html/objects.inv', None
         )
     ),
