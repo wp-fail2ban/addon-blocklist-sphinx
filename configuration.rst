@@ -21,5 +21,6 @@ effective values without making them editable. See the individual
    :maxdepth: 1
 
    configuration/service-connectivity
+   configuration/quickstart
    configuration/coexistence
    configuration/fail2ban

@@ -3,7 +3,7 @@
 Installation
 ============
 
-Blocklist 3.0 requires WordPress 4.9 or later, PHP 7.4 or later, and an active
+Blocklist 3.0 requires WordPress 6.2 or later, PHP 7.4 or later, and an active
 WP fail2ban 5.4 or later installation from the supported 5.x or 6.x series.
 Both WP fail2ban Free and Premium are supported. On multisite, install and use
 the add-on on the main site; subsites do not run the full Blocklist service.

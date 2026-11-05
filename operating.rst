@@ -55,8 +55,12 @@ Diagnosing service communication
 When GET and POST times stop advancing, first check the Blocklist status widget
 and WordPress Site Health. A missing install key points to the Freemius
 connection. A missing route, open unsigned route, or rejected signed request
-points to REST routing or authentication. An inconclusive loopback result means
-that this server could not test its own URL; check the endpoint from outside
+points to REST routing or authentication. The status widget treats a GET or POST
+within the last seven days as evidence that the service has reached the site. Recent
+contact overrides an inconclusive loopback result, while older contact is
+reported as a problem; a self-check that identifies a missing or open route, or
+a rejected signature, still takes priority. An inconclusive loopback means only
+that this server could not test its own URL, so check the endpoint from outside
 before concluding that BNS is also blocked.
 
 Then review the narrowly scoped REST allowance in
