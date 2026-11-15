@@ -1,5 +1,5 @@
 =========================
-WP fail2ban Blocklist 3.0
+WP fail2ban Blocklist 3.1
 =========================
 
 WP fail2ban Blocklist adds shared, pre-emptive protection to `WP fail2ban

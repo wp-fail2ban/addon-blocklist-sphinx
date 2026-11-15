@@ -3,7 +3,7 @@
 Installation
 ============
 
-Blocklist 3.0 requires WordPress 6.2 or later, PHP 7.4 or later, and an active
+Blocklist 3.1 requires WordPress 6.2 or later, PHP 7.4 or later, and an active
 WP fail2ban 5.4 or later installation from the supported 5.x or 6.x series.
 Both WP fail2ban Free and Premium are supported. On multisite, install and use
 the add-on on the main site; subsites do not run the full Blocklist service.
@@ -17,9 +17,13 @@ Install and connect
    permission. Blocklist uses the resulting site identity and shared secret
    to authenticate BNS requests. A paid licence is not required merely to make
    this connection.
-4. Confirm that the site's REST and security layers permit BNS access as
+4. Leave Blocklist participation enabled (the default), or turn it off from
+   QuickStart or the Blocklist settings tab. See
+   :ref:`WP_FAIL2BAN_ADDON_BLOCKLIST_ENABLED` to lock that choice in
+   ``wp-config.php``.
+5. Confirm that the site's REST and security layers permit BNS access as
    described in :ref:`configuration_service_connectivity`.
-5. Review the actions on the jail that will receive Blocklist messages. If it
+6. Review the actions on the jail that will receive Blocklist messages. If it
    reports matches to any third party, configure the dedicated ban-only jail
    in :ref:`configuration_fail2ban` before relying on Blocklist.
 
