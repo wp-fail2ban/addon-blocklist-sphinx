@@ -4,6 +4,23 @@
 Release information
 ===================
 
+WP fail2ban Blocklist 3.1.0
+---------------------------
+
+Version 3.1.0 adds an operator-facing enable switch for Blocklist participation,
+separate from the Freemius connection that still gates whether the add-on can
+run.
+
+Reader-visible changes in this release include:
+
+* QuickStart and the Blocklist settings **Enabled** control save
+  ``wpf2b_addon_blocklist_enabled`` (default enabled);
+* :ref:`WP_FAIL2BAN_ADDON_BLOCKLIST_ENABLED` locks that choice from
+  ``wp-config.php``;
+* with Freemius connected and participation off, Blocklist hooks, REST
+  handlers, and Site Health tests stay off while the settings UI remains
+  available.
+
 WP fail2ban Blocklist 3.0.0
 ---------------------------
 
