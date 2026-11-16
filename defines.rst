@@ -5,8 +5,8 @@
 ======================
 
 These constants provide fixed configuration in ``wp-config.php``.
-:ref:`WP_FAIL2BAN_ADDON_BLOCKLIST_ENABLED` locks the shared enable option used
-by QuickStart and the Blocklist settings tab. For the three Config-backed
+:ref:`WP_FAIL2BAN_ADDON_BLOCKLIST_ENABLED` locks the QuickStart card and the
+Blocklist settings **Enabled** control. For the three Config-backed
 controls (Ignore IPs, Custom Jail, and Blocklist facility), a constant
 overrides any saved WP fail2ban 6 Premium setting; WP fail2ban Free displays
 those effective values but does not save changes. The two debug controls are

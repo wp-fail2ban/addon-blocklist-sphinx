@@ -11,12 +11,11 @@ WP_FAIL2BAN_ADDON_BLOCKLIST_ENABLED
 ----
 
 Fixes whether the add-on participates once Freemius is connected. When the
-constant is defined, it overrides the saved WordPress option
-``wpf2b_addon_blocklist_enabled`` and locks the QuickStart card and the
-Blocklist settings **Enabled** control.
+constant is defined, it overrides the QuickStart card and the Blocklist
+settings **Enabled** control, and locks both.
 
 A :php:`true` value keeps participation on; a :php:`false` value keeps it off.
-Without the constant, a missing option defaults to enabled. Freemius remains a
+Without the constant, participation defaults to enabled. Freemius remains a
 separate gate: the add-on still needs that connection before it can run, and
 disabling participation stops Blocklist hooks, REST handlers, and Site Health
 tests without removing the settings UI that turns it back on.
@@ -28,11 +27,10 @@ tests without removing the settings UI that turns it back on.
 
 **Accepted values:** :php:`true` or :php:`false`
 
-**Default:** enabled (the option is absent or stores ``'1'``)
+**Default:** enabled
 
-The option stores only the strings ``'0'`` and ``'1'``. This control is not one
-of the Premium Config-backed defines; Free and Premium both save the option
-unless a PHP constant locks it.
+This control is not one of the Premium Config-backed defines; Free and Premium
+both expose the same UI switch unless a PHP constant locks it.
 
 .. seealso::
    * :ref:`configuration_quickstart`
