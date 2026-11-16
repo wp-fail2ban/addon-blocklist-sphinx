@@ -13,8 +13,8 @@ run.
 
 Reader-visible changes in this release include:
 
-* QuickStart and the Blocklist settings **Enabled** control save
-  ``wpf2b_addon_blocklist_enabled`` (default enabled);
+* QuickStart and the Blocklist settings **Enabled** control turn
+  participation on or off (default enabled);
 * :ref:`WP_FAIL2BAN_ADDON_BLOCKLIST_ENABLED` locks that choice from
   ``wp-config.php``;
 * with Freemius connected and participation off, Blocklist hooks, REST
